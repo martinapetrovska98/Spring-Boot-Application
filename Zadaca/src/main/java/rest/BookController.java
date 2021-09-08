@@ -22,10 +22,8 @@ public class BookController {
         return bookService.getById(id);
     }
 
-    private Book updateBook(long id){
-        Book book = new Book();
-        book.save();
-        return  bookService.updateBook(book);
+    private Book updateBook(Book book){
+         return  bookService.updateBook(book);
     }
 
     private Book createBook(Book book){

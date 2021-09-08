@@ -29,9 +29,9 @@ public class AuthorController {
         return authorService.getById(id);
     }
 
-    private Author createAuthor(){
-        Author author = new Author();
-       return authorService.addAuthor(author); }
+    private Author createAuthor(Author author){
+
+       return authorService.addAuthor(author);}
 
 
 }
